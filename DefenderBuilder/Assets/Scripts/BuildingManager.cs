@@ -4,27 +4,16 @@ using UnityEngine;
 
 public class BuildingManager : MonoBehaviour
 {
-    
-    private Camera mainCamera;
-    private BuildingTypeListSO buildingTypeList;
-    private BuildingTypeSO buildingType;
+    [SerializeField] private Transform pfWoodHarvester;
+    Camera mainCamera;
     
     private void Start() {
         mainCamera = Camera.main;
-
-        buildingTypeList = Resources.Load<BuildingTypeListSO>("BuildingTypeList");
-        buildingType = buildingTypeList.list[0];
     }
     private void Update() {
-        if (Input.GetMouseButtonDown(0)) {
-            Instantiate(buildingType.prefab, GetMouseWorldPosition(), Quaternion.identity);
-        }
-
-        if (Input.GetKeyDown(KeyCode.T)) {
-            buildingType = buildingTypeList.list[0];
-        } 
-        else if (Input.GetKeyDown(KeyCode.Y)) {
-            buildingType = buildingTypeList.list[1];
+        if (Input.GetMouseButtonDown(0))
+        {
+            Instantiate(pfWoodHarvester, GetMouseWorldPosition(), Quaternion.identity);
         }
     }
 
