@@ -9,9 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 82264a436c3194c4c9e2c5e59c689004, type: 3}
-  m_Name: BuildingTypeList
+  m_Script: {fileID: 11500000, guid: 67676d744e5f74ed6b7294f37356aadd, type: 3}
+  m_Name: WoodHarvester
   m_EditorClassIdentifier: 
-  list:
-  - {fileID: 11400000, guid: 933d94d36a3f14cedbf257cf97403a92, type: 2}
-  - {fileID: 11400000, guid: da0c59eb31e004ba2b96193c84b5fb0b, type: 2}
+  nameString: Wood Harvester
+  prefab: {fileID: 983417549783402709, guid: 44bd57242a16e4b08911b2d7ae408b77, type: 3}
